@@ -104,17 +104,28 @@ nav a:hover {
 .gallery {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.gallery img {
-    object-fit: cover;
+    justify-content: space-between;
+    padding: 4% 4% 0;
 }
 .content {
     width: 30%;
     text-align: center;
 }
-
-p {
-    font-size: 1.6vh;
+.content:hover {
+    background: #FF6047;
+}
+.content img {
+    width: 100%;
+}
+.content p {
+    padding: 4% 0 15%;
+    font-size: 1.4vh;
     font-family: 'Roboto', sans-serif;
+}
+
+.footer-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #1D2D44;
 }
