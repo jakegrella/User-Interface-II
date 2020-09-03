@@ -1,0 +1,120 @@
+* {
+    color: #F9F7F0;
+    /* border: 1px solid grey; */
+}
+html {
+   background: #0D1321; 
+}
+
+/* header {
+    margin: 1% 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.2rem;
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 40%;
+    max-width: 400px;
+}
+nav a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url("https://images.unsplash.com/photo-1534840641466-b1cdb8fb155e?ixlib=rb-1.2.1&auto=format&fit=crop&w=4350&q=80"));
+    height: 50%;
+} */
+
+.hero {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1515311541935-8e5a245b2999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3648&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 2% 0;
+}
+.hero-bottom-buttons {
+    display: flex;
+    margin: 0 0 2% 2%;
+}
+h1, nav, .hero-text h2, .button {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+    font-size: 3.2vh;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+h1 a:hover {
+    color: #FF6047;
+}
+nav {
+    font-size: 1.6vh;
+    text-transform: lowercase;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    padding: 2% 0;
+}
+nav a:hover {
+    color: #FF6047;
+}
+.hero-text {
+    font-size: 7.2vh;
+    font-weight: 700;
+    text-transform: lowercase;
+    width: 70%;
+    margin-left: 5%;
+}
+.button {
+    font-size: 1.6vh;
+    padding: 1% 2%;
+}
+.button:hover {
+    /* border: 2px solid #F9F7F0; */
+    background: #F9F7F0;
+    color: #FF6047;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.gallery img {
+    object-fit: cover;
+}
+.content {
+    width: 30%;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6vh;
+    font-family: 'Roboto', sans-serif;
+}
