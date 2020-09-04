@@ -1,6 +1,5 @@
 * {
     color: #F9F7F0;
-    /* border: 1px solid grey; */
 }
 html {
    background: #0D1321; 
@@ -67,7 +66,6 @@ nav a:hover {
     padding: 1% 2%;
 }
 .button:hover {
-    /* border: 2px solid #F9F7F0; */
     background: #F9F7F0;
     color: #FF6047;
 }
@@ -85,6 +83,7 @@ nav a:hover {
 }
 .content:hover {
     background: #FF6047;
+    border-radius: 0 0 10px 10px;
 }
 .content img {
     width: 100%;
@@ -114,4 +113,11 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.8rem;
     text-align: center
+}
+
+/* Change background image for wider screens */
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url(https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4952&q=80);
+    }
 }
