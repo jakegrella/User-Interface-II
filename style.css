@@ -1,0 +1,175 @@
+* {
+    color: #F9F7F0;
+}
+html {
+   background: #0D1321; 
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.hero {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4952&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 2% 0;
+}
+.hero-bottom-buttons {
+    display: flex;
+    margin: 0 0 2% 2%;
+}
+.logo, nav, .hero-text h2, .button {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.logo {
+    font-size: 3.2vh;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+.logo:hover {
+    color: #FF6047;
+}
+nav {
+    font-size: 1.6vh;
+    text-transform: lowercase;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    padding: 2% 0;
+}
+nav a:hover {
+    color: #FF6047;
+}
+.hero-text {
+    font-size: 7.2vh;
+    font-weight: 700;
+    text-transform: lowercase;
+    width: 70%;
+    margin-left: 10%;
+}
+.button {
+    font-size: 1.6vh;
+    padding: 1% 2%;
+}
+.button:hover {
+    background: #F9F7F0;
+    color: #FF6047;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 4% 4% 0;
+}
+.content {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.content:hover {
+    background: #FF6047;
+    border-radius: 0 0 10px 10px;
+}
+.content img {
+    width: 100%;
+}
+.content p {
+    padding: 4% 0 4%;
+    font-size: 1.4vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #1D2D44;
+}
+
+.footer-nav a {
+    padding: 4% 2%;
+}
+.footer-nav a:hover, .footer-nav i:hover {
+    color: #FF6047
+}
+
+h1 {
+    margin: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    text-align: center
+}
+
+/* Change background image for wider screens */
+@media screen and (max-width: 1024px) {
+    .hero {
+        background-image: url(https://images.unsplash.com/photo-1515311541935-8e5a245b2999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3648&q=80);
+    }
+
+    nav {
+        font-size: 1.4vh;
+        text-transform: lowercase;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-flow: column wrap;
+    }
+    header .logo{
+        margin-bottom: 3%;
+    }
+
+    .hero-bottom-buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Would definitely be using a hamburger menu by this point. */
+    nav {
+        width: 80%;
+    }
+    .gallery {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .content {
+        width: 90%;
+    }
+}
+/*  480
+    1024
+    >1024  */
