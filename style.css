@@ -7,7 +7,7 @@ html {
 
 .hero {
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1515311541935-8e5a245b2999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3648&q=80);
+    background-image: url(https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4952&q=80);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,8 +116,47 @@ h1 {
 }
 
 /* Change background image for wider screens */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1024px) {
     .hero {
-        background-image: url(https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4952&q=80);
+        background-image: url(https://images.unsplash.com/photo-1515311541935-8e5a245b2999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3648&q=80);
+    }
+
+    nav {
+        font-size: 1.4vh;
+        text-transform: lowercase;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 48%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-flow: column wrap;
+    }
+    header .logo{
+        margin-bottom: 3%;
+    }
+
+    .hero-bottom-buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    /* Would definitely be using a hamburger menu by this point. */
+    .gallery {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .content {
+        width: 90%;
+    }
+}
+/*  480
+    1024
+    >1024  */
